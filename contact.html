@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — S.S Corporation</title>
+<meta name="description" content="Contact S.S Corporation, a pharmaceutical distribution and export company based in Karachi, Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="wordmark">
+      <img src="assets/logo-mark.png" alt="S.S Corporation Pharmaceuticals" class="wordmark-icon">
+      <span>S.S Corporation</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Talk to us about distribution or export</h1>
+    </div>
+  </section>
+
+  <section class="illustration-band illustration-contact">
+    <div class="wrap">
+      <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a location pin over the Karachi skyline">
+        <line x1="0" y1="170" x2="800" y2="170" stroke="var(--line)" stroke-width="1.5"/>
+        <rect x="80" y="110" width="34" height="60" fill="#15453B"/>
+        <rect x="122" y="90" width="30" height="80" fill="#0F332C"/>
+        <rect x="160" y="126" width="26" height="44" fill="#15453B"/>
+        <rect x="600" y="118" width="30" height="52" fill="#15453B"/>
+        <rect x="638" y="96" width="26" height="74" fill="#0F332C"/>
+        <rect x="672" y="132" width="24" height="38" fill="#15453B"/>
+        <g transform="translate(400,40)">
+          <path d="M0 0 C-26 0 -46 20 -46 46 C-46 82 0 130 0 130 C0 130 46 82 46 46 C46 20 26 0 0 0 Z" fill="#FF5A45"/>
+          <circle cx="0" cy="46" r="18" fill="#FFF3EF"/>
+        </g>
+        <path d="M300 172 Q 350 60 400 176" fill="none" stroke="var(--line)" stroke-width="1.2" stroke-dasharray="2 8"/>
+        <path d="M500 172 Q 450 60 400 176" fill="none" stroke="var(--line)" stroke-width="1.2" stroke-dasharray="2 8"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-info">
+        <p class="eyebrow">Reach us directly</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+923141234567">0314-1234567</a>
+          </li>
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:anas.69911@iqra.edu.pk">anas.69911@iqra.edu.pk</a>
+          </li>
+          <li>
+            <span class="contact-label">Office</span>
+            <span>Karachi, Pakistan</span>
+          </li>
+        </ul>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Karachi,Pakistan&output=embed"
+            width="100%" height="280" style="border:0"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing Karachi, Pakistan">
+          </iframe>
+        </div>
+        <p class="map-note">Showing central Karachi — exact office
+          location to be pinned once available.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <p class="eyebrow">Send a quick message</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-amber">Send message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="inquiry-section">
+    <div class="wrap inquiry-inner">
+      <div class="inquiry-text">
+        <p class="eyebrow">Formal inquiry or quotation request</p>
+        <h2>Have documents to attach?</h2>
+        <p>Download the inquiry form, fill it in, and either attach it to
+          the upload form below or email it directly with your supporting
+          documents (purchase order, license, product list, etc.).</p>
+        <a href="assets/ss-corporation-inquiry-form.pdf" class="btn btn-outline-dark" download>
+          Download inquiry form (PDF)
+        </a>
+      </div>
+
+      <!--
+        Upload form — connect a form backend to receive submissions with
+        attachments directly (no server code needed). Sign up free at
+        https://formspree.io, create a form, and replace YOUR_FORM_ID in
+        the action URL below with the ID Formspree gives you. Until then,
+        this form will not deliver — use the email link above instead.
+      -->
+      <form class="upload-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST" enctype="multipart/form-data">
+        <label for="up-name">Name</label>
+        <input type="text" id="up-name" name="name" required>
+
+        <label for="up-email">Email</label>
+        <input type="email" id="up-email" name="email" required>
+
+        <label for="up-file">Attach document</label>
+        <input type="file" id="up-file" name="attachment"
+               accept=".pdf,.doc,.docx,.jpg,.png">
+
+        <label for="up-notes">Notes</label>
+        <textarea id="up-notes" name="notes" rows="3"></textarea>
+
+        <button type="submit" class="btn btn-outline-dark">Upload &amp; send</button>
+        <p class="form-note">Requires a connected form service to deliver
+          — see the setup note in the page source.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-mark.png" alt="S.S Corporation Pharmaceuticals" class="footer-icon">
+      <span>S.S Corporation</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-contact">
+      <span>Karachi, Pakistan</span>
+      <span>0314-1234567</span>
+      <span>anas.69911@iqra.edu.pk</span>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 S.S Corporation. Distributing since 1998.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
